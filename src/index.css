@@ -1,0 +1,16 @@
+ul, li {
+  list-style: none;
+}
+
+h1 {
+  text-align: center;
+  font-weight: 400;
+  color: grey;
+  margin-bottom: 30px;
+}
+
+li:last-child {
+  border-bottom: none;
+}
+
+

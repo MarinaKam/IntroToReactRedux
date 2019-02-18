@@ -1,0 +1,50 @@
+section {
+    position: relative;
+    margin: 0 auto;
+    padding: 0 2%;
+}
+
+h1 {
+    text-align: center;
+    font-weight: 400;
+    color: grey;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+hr {
+    display: block;
+    border: 1px solid lightgray;
+    text-align: center;
+}
+
+.app__first {
+    width: 110px;
+}
+
+.app__second {
+    width: 60px;
+}
+
+.app__third {
+    width: 10px;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    section {
+        padding: 0 12%;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}

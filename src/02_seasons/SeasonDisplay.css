@@ -1,0 +1,45 @@
+.season {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 auto;
+}
+.container {
+    flex: 1 0 auto;
+    padding: 50px 0;
+}
+
+.summer {
+    background-color: rgba(255, 165, 0, .1);
+}
+
+.winter {
+    background-color: rgba(0, 0, 255, .1);
+}
+
+.ui.inverted.dimmer .ui.indeterminate.loader {
+    color: blue;
+}
+
+.ui.inverted.dimmer .ui.indeterminate.loader:before {
+    border-color: rgba(0,0,255, .1);
+}
+
+.ui.inverted.dimmer .ui.indeterminate.loader:after {
+    border-color: blue transparent transparent;
+}
+
+/*.ui.large.active.loader {*/
+    /*position: absolute;*/
+    /*top: 50%;*/
+    /*left: 50%;*/
+    /*transform: translate(-50%, -50%);*/
+/*}*/
+
+/*.ui.large.active.loader:before {*/
+    /*border-color: rgba(0,0,255, .1);*/
+/*}*/
+
+/*.ui.large.active.loader:after {*/
+    /*border-color: blue transparent transparent;*/
+/*}*/
