@@ -15,8 +15,6 @@ class UserHeader extends Component {
     }
 }
 
-const mapStateToProps = (state, ownProps) => {
-    return { user: state.users.find(el => el.id === ownProps.userId) }
-} ;
+const mapStateToProps = (state, ownProps) => ({ user: state.users.find(el => el.id === ownProps.userId)});
 
 export default connect(mapStateToProps )(UserHeader);

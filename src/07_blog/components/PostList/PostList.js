@@ -27,7 +27,6 @@ class PostList extends Component {
     }
 
     render() {
-        // console.log('this.props', this.props.posts);
         if(this.props.posts.length === 0) return (
             <div className="d-flex justify-content-center">
                 <div className="spinner-border text-secondary" style={{width:'2rem', height: '2rem', opacity: '0.5'}} role="status">
@@ -41,10 +40,6 @@ class PostList extends Component {
     }
 }
 
-const mapStateToProps = state => {
-    return {
-        posts: state.posts
-    }
-} ;
+const mapStateToProps = state => ({ posts: state.posts });
 
 export default connect(mapStateToProps, { fetchPostsAndUsers })(PostList);
