@@ -1,18 +1,15 @@
-import React, { Component, Fragment } from 'react';
+import React, { Fragment } from 'react';
+import PostList from "../PostList/PostList";
 
-class App extends Component {
-    render() {
-        return(
-            <Fragment>
-                <section className='container'>
-                    <h1>Blog</h1>
-                </section>
-                <section className='container'>
-                    Hello World!!!
-                </section>
-            </Fragment>
-        );
-    }
-}
+const App = () => (
+    <Fragment>
+        <section className='container'>
+            <h1>Posts</h1>
+        </section>
+        <section className='container'>
+            <PostList />
+        </section>
+    </Fragment>
+);
 
 export default App;
