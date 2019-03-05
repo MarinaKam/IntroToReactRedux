@@ -23,6 +23,14 @@ button:hover {
   box-shadow: none !important;
 }
 
+.navbar-nav .dropdown-menu {
+  position: absolute;
+}
+
+.btn.disabled, .btn:disabled {
+  cursor: not-allowed;
+}
+
 @media (min-width: 900px) {
   .navbar-collapse.hidden-toggle-nav {
     display: none !important;

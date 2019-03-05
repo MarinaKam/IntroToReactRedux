@@ -7,13 +7,13 @@ import App from './08_stream/client/components/App';
 import * as serviceWorker from './serviceWorker';
 import reducers from "./08_stream/client/reducers";
 //this line for project 07_blog and applyMiddleware for redux
-// import thunk from 'redux-thunk';
-
+import thunk from 'redux-thunk';
+//add redux-form for manage the form state in redux
 
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 const store = createStore(
     reducers,
-    composeEnhancers(applyMiddleware())
+    composeEnhancers(applyMiddleware(thunk))
     );
 
 ReactDOM.render(

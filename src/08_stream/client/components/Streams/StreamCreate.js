@@ -1,20 +1,74 @@
-import React from 'react';
+import React, { Component } from 'react';
+import { Field, reduxForm } from 'redux-form';
+import { connect } from 'react-redux';
+import { createStream } from '../../actions/index';
 
-const StreamCreate = () => (
-  <section className='mt-4'>
-      <h1>Create a Stream</h1>
-      <form className='col-sm-8 col-md-6 col-lg-4 mx-auto'>
-          <div className="form-group">
-              <label htmlFor="title">Title:</label>
-              <input type="text" className="form-control" id="title" />
-          </div>
-          <div className="form-group">
-              <label htmlFor="description">Description:</label>
-              <input type="text" className="form-control" id="description" />
-          </div>
-          <button type="submit" className="btn btn-primary px-4">Submit</button>
-      </form>
-  </section>
-);
+class StreamCreate extends Component {
 
-export default StreamCreate;
+    renderField = ({ input, label, type, meta: { touched, error } }) => {
+        // console.log(input);
+        const className = `form-control ${touched && error ? 'is-invalid' : ''}`;
+        return(
+            <div className="form-group">
+                <label htmlFor={`${type}${label}`}>{label}</label>
+                <input
+                    {...input}
+                    type={type}
+                    id={`${type}${label}`}
+                    placeholder={label}
+                    className={className}
+                    autoComplete='off'
+                />
+                {touched && (error && <span className="form-text text-danger">{error}</span>)}
+            </div>
+        );
+    };
+
+    onSubmit = (formValues) => {
+        // Do something with the form values
+        console.log('values');
+        console.log(formValues);
+        this.props.createStream(formValues);
+    };
+
+    render() {
+        const { handleSubmit, pristine, reset, submitting } = this.props;
+
+        return(
+            <section className='mt-4'>
+                <h1>Create a Stream</h1>
+                <form
+                    className='col-sm-8 col-md-6 col-lg-4 mx-auto'
+                    onSubmit={handleSubmit(this.onSubmit)}
+                >
+                    <Field
+                        name="title"
+                        type="text"
+                        component={this.renderField}
+                        label="Title"/>
+                    <Field name="description" type="text" component={this.renderField} label="Description"/>
+                    <button type="submit" className="btn btn-primary px-4 mr-2" disabled={submitting}>Submit</button>
+                    <button type="button" className="btn btn-secondary px-4" disabled={pristine || submitting} onClick={reset}>Clear Values</button>
+                </form>
+            </section>
+        );
+    }
+}
+
+const validate = (values) => {
+    const errors = {};
+    if (!values.title) {
+        errors.title = 'Required a Title!';
+    }
+    if (!values.description) {
+        errors.description = 'Required a Description!';
+    }
+    return errors;
+};
+
+const formWrapped = reduxForm({
+    form: 'streamCreate', // a unique name for this form
+    validate
+})(StreamCreate);
+
+export default connect(null, { createStream })(formWrapped);
