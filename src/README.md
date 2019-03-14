@@ -8,7 +8,11 @@
 ----------------------------------------------------------------------
  Create record     |      POST     |   /streams     | single record  |
 ----------------------------------------------------------------------
- Update a record   |       PUT     |   /streams/:id | single record  |
+ Update ALL prop.  |
+  of a record      |       PUT     |   /streams/:id | single record  |
+----------------------------------------------------------------------
+ Update SOME prop. |
+ of a record       |     PATCH     |   /streams/:id | single record  |
 ----------------------------------------------------------------------
  Delete a record   |     DELETE    |   /streams /:id|  nothing       |
 ----------------------------------------------------------------------

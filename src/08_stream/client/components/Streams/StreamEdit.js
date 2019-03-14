@@ -1,21 +1,38 @@
-import React from 'react';
+import React, { Component } from 'react';
+import { connect } from 'react-redux';
+import { fetchStream, editStream } from "../../actions";
+import StreamForm from "./StreamForm";
 
-const StreamEdit = () => (
-    <section className='mt-4'>
-        <h1>Edit a Stream</h1>
-        <form className='col-sm-8 col-md-6 col-lg-4 mx-auto'>
-            <div className="form-group">
-                <label htmlFor="title">Title:</label>
-                <input type="text" className="form-control" id="title" />
-            </div>
-            <div className="form-group">
-                <label htmlFor="description">Description:</label>
-                <input type="text" className="form-control" id="description" />
-            </div>
-            <button type="submit" className="btn btn-primary px-4">Edit</button>
-        </form>
-    </section>
-);
+class StreamEdit extends Component {
 
+    componentDidMount() {
+        this.props.fetchStream(this.props.match.params.id);
+    }
 
-export default StreamEdit;
+    onSubmit = formValues => {
+      this.props.editStream(this.props.match.params.id, formValues);
+    };
+
+    render() {
+        const { title, description } = this.props.stream ? this.props.stream : '';
+        if (!this.props.stream) {
+            return <section className='d-flex justify-content-center align-self-center'>Loading...</section>
+        }
+        return (
+            <section className='mt-4'>
+                <h1>Edit a Stream</h1>
+                <StreamForm initialValues={{ title, description }}
+                            onSubmit={ this.onSubmit }/>
+            </section>
+        );
+
+    }
+}
+
+const mapStateToProps = (state, ownProps) => {
+    return { stream: state.streams[ownProps.match.params.id]};
+};
+
+export default connect(
+    mapStateToProps,
+    { fetchStream, editStream })(StreamEdit);

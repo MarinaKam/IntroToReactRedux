@@ -1,27 +1,27 @@
 import React, { Fragment } from 'react';
-import { BrowserRouter, Route } from 'react-router-dom';
+import { Router, Route } from 'react-router-dom';
 
 import Header from "./Header";
 import StreamShow from "./Streams/StreamShow";
 import StreamCreate from "./Streams/StreamCreate";
 import StreamEdit from "./Streams/StreamEdit";
 import StreamDelete from "./Streams/StreamDelete";
-
-const HomePage = () => <div>Home Page!</div>;
+import StreamList from "./Streams/StreamList";
+import history from '../history';
 
 const App = () => (
-           <BrowserRouter>
+           <Router history={history}>
                <Fragment>
                    <Header />
                    <main className='container'>
-                       <Route path='/' exact component={HomePage}/>
+                       <Route path='/' exact component={StreamList}/>
                        <Route path='/streams/show' component={StreamShow}/>
                        <Route path='/streams/new' component={StreamCreate} />
-                       <Route path='/streams/edit' component={StreamEdit}/>
-                       <Route path='/streams/delete' component={StreamDelete}/>
+                       <Route path='/streams/edit/:id' component={StreamEdit}/>
+                       <Route path='/streams/delete/:id' component={StreamDelete}/>
                    </main>
                </Fragment>
-           </BrowserRouter>
+           </Router>
 );
 
 export default App;
