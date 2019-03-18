@@ -27,8 +27,14 @@ class StreamList extends Component {
                 <div className="d-flex justify-content-between media">
                     <i className="fas fa-camera fa-3x align-self-center mr-3"></i>
                     <div className="media-body pt-2">
-                        <h5 className="mt-0">{ title }</h5>
-                        <p>{ description.length > 100 ? description.substring(0, 100) + '...' : description}</p>
+                        <h5 className="mt-0">
+                            <Link to={`/streams/${id}`}>
+                                { title }
+                            </Link>
+                        </h5>
+                        <p>{ description.length > 100 ? description.substring(0, 100) + '...' : description}
+                            <Link to={`/streams/${id}`}> read more</Link>
+                        </p>
                     </div>
                     { this.renderAdmin(userId, id) }
                 </div>

@@ -1,5 +1,5 @@
 import React, { Fragment } from 'react';
-import { Router, Route } from 'react-router-dom';
+import { Router, Route, Switch } from 'react-router-dom';
 
 import Header from "./Header";
 import StreamShow from "./Streams/StreamShow";
@@ -14,11 +14,13 @@ const App = () => (
                <Fragment>
                    <Header />
                    <main className='container'>
-                       <Route path='/' exact component={StreamList}/>
-                       <Route path='/streams/show' component={StreamShow}/>
-                       <Route path='/streams/new' component={StreamCreate} />
-                       <Route path='/streams/edit/:id' component={StreamEdit}/>
-                       <Route path='/streams/delete/:id' component={StreamDelete}/>
+                       <Switch>
+                           <Route path='/' exact component={StreamList}/>
+                           <Route path='/streams/new' exact component={StreamCreate} />
+                           <Route path='/streams/edit/:id' exact component={StreamEdit}/>
+                           <Route path='/streams/delete/:id' exact component={StreamDelete}/>
+                           <Route path='/streams/:id' exact component={StreamShow}/>
+                       </Switch>
                    </main>
                </Fragment>
            </Router>

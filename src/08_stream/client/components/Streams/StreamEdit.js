@@ -14,10 +14,10 @@ class StreamEdit extends Component {
     };
 
     render() {
-        const { title, description } = this.props.stream ? this.props.stream : '';
         if (!this.props.stream) {
             return <section className='d-flex justify-content-center align-self-center'>Loading...</section>
         }
+        const { title, description } = this.props.stream;
         return (
             <section className='mt-4'>
                 <h1>Edit a Stream</h1>
