@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/MarinaKam/IntroToReactRedux/precache-manifest.7d53d2114d7fe4c376334ac1cc777645.js"
+  "/IntroToReactRedux/precache-manifest.4f9b58eb5243241d15c861df52bb0747.js"
 );
 
 workbox.clientsClaim();
@@ -28,7 +28,7 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("/MarinaKam/IntroToReactRedux/index.html", {
+workbox.routing.registerNavigationRoute("/IntroToReactRedux/index.html", {
   
   blacklist: [/^\/_/,/\/[^\/]+\.[^\/]+$/],
 });
