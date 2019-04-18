@@ -3,9 +3,9 @@ import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
 import { createStore, applyMiddleware, compose } from 'redux';
 import './index.css';
-import App from './08_stream/client/components/App';
+import App from './09_videos/components/App/App';
 import * as serviceWorker from './serviceWorker';
-import reducers from "./08_stream/client/reducers";
+import reducers from "./09_videos/reducers";
 //this line for project 07_blog and applyMiddleware for redux
 import thunk from 'redux-thunk';
 //add redux-form for manage the form state in redux
