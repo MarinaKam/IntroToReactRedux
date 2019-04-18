@@ -16,11 +16,11 @@ const App = () => (
             </header>
             <section>
                 <Switch>
-                    <Route exact path='/' render={() => <Discover title='Discover' />}/>
-                    <Route exact path='/popular' render={() => <Main title='Popular' section={PATH_POPULAR} />}/>
-                    <Route exact path='/top-rated' render={() => <Main title="Top Rated" section={PATH_TOP_RATED} />}/>
-                    <Route exact path='/coming-soon' render={() => <Main title="Coming Soon" section={PATH_UPCOMING} />}/>
-                    <Route exact path='/movie/:id' component={MovieItem}/>
+                    <Route exact path='/IntroToReactRedux/' render={() => <Discover title='Discover' />}/>
+                    <Route exact path='/IntroToReactRedux/popular' render={() => <Main title='Popular' section={PATH_POPULAR} />}/>
+                    <Route exact path='/IntroToReactRedux/top-rated' render={() => <Main title="Top Rated" section={PATH_TOP_RATED} />}/>
+                    <Route exact path='/IntroToReactRedux/coming-soon' render={() => <Main title="Coming Soon" section={PATH_UPCOMING} />}/>
+                    <Route exact path='/IntroToReactRedux/movie/:id' component={MovieItem}/>
                     {/*//        render={props => (*/}
                     {/*//     <MovieItem {...props} id={props.match.params.id}/>*/}
                     {/*// ) }/>*/}
