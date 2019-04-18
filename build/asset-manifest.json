@@ -1,13 +1,13 @@
 {
-  "main.css": "/IntroToReactRedux/static/css/main.2c51aacd.chunk.css",
-  "main.js": "/IntroToReactRedux/static/js/main.fc5f6969.chunk.js",
-  "main.js.map": "/IntroToReactRedux/static/js/main.fc5f6969.chunk.js.map",
-  "runtime~main.js": "/IntroToReactRedux/static/js/runtime~main.e150f7eb.js",
-  "runtime~main.js.map": "/IntroToReactRedux/static/js/runtime~main.e150f7eb.js.map",
-  "static/js/2.b12f704e.chunk.js": "/IntroToReactRedux/static/js/2.b12f704e.chunk.js",
-  "static/js/2.b12f704e.chunk.js.map": "/IntroToReactRedux/static/js/2.b12f704e.chunk.js.map",
-  "index.html": "/IntroToReactRedux/index.html",
-  "precache-manifest.4f9b58eb5243241d15c861df52bb0747.js": "/IntroToReactRedux/precache-manifest.4f9b58eb5243241d15c861df52bb0747.js",
-  "service-worker.js": "/IntroToReactRedux/service-worker.js",
-  "static/css/main.2c51aacd.chunk.css.map": "/IntroToReactRedux/static/css/main.2c51aacd.chunk.css.map"
+  "main.css": "/films-4U-react-redux/static/css/main.2c51aacd.chunk.css",
+  "main.js": "/films-4U-react-redux/static/js/main.bd4d8b92.chunk.js",
+  "main.js.map": "/films-4U-react-redux/static/js/main.bd4d8b92.chunk.js.map",
+  "runtime~main.js": "/films-4U-react-redux/static/js/runtime~main.c15a28b0.js",
+  "runtime~main.js.map": "/films-4U-react-redux/static/js/runtime~main.c15a28b0.js.map",
+  "static/js/2.b12f704e.chunk.js": "/films-4U-react-redux/static/js/2.b12f704e.chunk.js",
+  "static/js/2.b12f704e.chunk.js.map": "/films-4U-react-redux/static/js/2.b12f704e.chunk.js.map",
+  "index.html": "/films-4U-react-redux/index.html",
+  "precache-manifest.90974d74e79a50ade693c465ed63ee2e.js": "/films-4U-react-redux/precache-manifest.90974d74e79a50ade693c465ed63ee2e.js",
+  "service-worker.js": "/films-4U-react-redux/service-worker.js",
+  "static/css/main.2c51aacd.chunk.css.map": "/films-4U-react-redux/static/css/main.2c51aacd.chunk.css.map"
 }
