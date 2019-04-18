@@ -2,7 +2,7 @@
   "name": "intro-to-react-redux",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://MarinaKam.github.io/films-4U-react-redux",
+  "homepage": "https://marinakam.github.io/IntroToReactRedux",
   "dependencies": {
     "axios": "^0.18.0",
     "faker": "^4.1.0",

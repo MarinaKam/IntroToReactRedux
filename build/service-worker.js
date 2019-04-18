@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/films-4U-react-redux/precache-manifest.90974d74e79a50ade693c465ed63ee2e.js"
+  "/IntroToReactRedux/precache-manifest.4f9b58eb5243241d15c861df52bb0747.js"
 );
 
 workbox.clientsClaim();
@@ -28,7 +28,7 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("/films-4U-react-redux/index.html", {
+workbox.routing.registerNavigationRoute("/IntroToReactRedux/index.html", {
   
   blacklist: [/^\/_/,/\/[^\/]+\.[^\/]+$/],
 });
