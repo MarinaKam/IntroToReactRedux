@@ -3,16 +3,16 @@ import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
 import { createStore, applyMiddleware, compose } from 'redux';
 import './index.css';
-import App from './09_videos/components/App/App';
+import App from './10_translate-with-context/components/App/App';
 import * as serviceWorker from './serviceWorker';
-import reducers from "./09_videos/reducers";
+// import reducers from "./09_videos/reducers";
 //this line for project 07_blog and applyMiddleware for redux
 import thunk from 'redux-thunk';
 //add redux-form for manage the form state in redux
 
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 const store = createStore(
-    reducers,
+    // reducers,
     composeEnhancers(applyMiddleware(thunk))
     );
 
