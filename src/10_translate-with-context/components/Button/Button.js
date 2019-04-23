@@ -3,14 +3,17 @@ import LanguageContext from "../../contexts/LanguageContext";
 
 class Button extends Component {
 
-    static contextType = LanguageContext;
+    renderSubmit = value => value === 'english'
+        ? 'Submit' : value === 'ukrainian'
+            ? 'Зберегти' : 'Сохранить';
 
     render() {
-        const text = this.context === 'english'
-            ? 'Submit' : this.context === 'ukrainian'
-            ? 'Зберегти' : 'Сохранить';
         return (
-            <button className="ui primary button">{text}</button>
+            <button className="ui primary button">
+                <LanguageContext.Consumer>
+                    {value =>  this.renderSubmit(value)}
+                </LanguageContext.Consumer>
+            </button>
         );
     }
 }

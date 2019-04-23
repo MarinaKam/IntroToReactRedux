@@ -3,16 +3,18 @@ import LanguageContext from "../../contexts/LanguageContext";
 
 class Field extends Component {
 
-    static contextType = LanguageContext;
+    renderSubmit = value => value === 'english'
+        ? 'Name' : value === 'ukrainian' ? "Ім'я" : 'Имя';
 
     render() {
-        const text = this.context === 'english'
-        ? 'Name' : this.context === 'ukrainian' ? "Ім'я" : 'Имя';
-
         return (
             <div className="field">
-                <label>{text}</label>
-                <input type="text" name="name" placeholder="" />
+                <label>
+                    <LanguageContext.Consumer>
+                        {value => this.renderSubmit(value)}
+                    </LanguageContext.Consumer>
+                </label>
+                <input type="text" name="name" />
             </div>
         );
     }

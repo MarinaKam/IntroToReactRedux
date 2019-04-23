@@ -1,8 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Quicksand');
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
 
 body {
-  font-family: 'Quicksand', sans-serif;
+  font-family: 'Quicksand', 'Montserrat', sans-serif;
   font-size: 16px;
+  font-weight: 400;
 }
 
 ul, li {
@@ -43,6 +45,14 @@ button:hover {
 .ui.toggle.checkbox input:focus:checked~.box, .ui.toggle.checkbox input:focus:checked~label,
 .ui.form .field>label {
   color: inherit !important;
+}
+
+.ui.button {
+  font-family: inherit !important;
+}
+
+.ui.form .field>label {
+  font-weight: inherit;
 }
 
 @media (min-width: 900px) {
