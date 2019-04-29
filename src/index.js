@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
 import { createStore, applyMiddleware, compose } from 'redux';
 import './index.css';
-import App from './10_translate-with-context/components/App/App';
+import App from './11_hooks/components/App/App';
 import * as serviceWorker from './serviceWorker';
 // import reducers from "./09_videos/reducers";
 //this line for project 07_blog and applyMiddleware for redux

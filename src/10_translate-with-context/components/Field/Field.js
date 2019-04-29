@@ -11,7 +11,7 @@ class Field extends Component {
             <div className="field">
                 <label>
                     <LanguageContext.Consumer>
-                        {value => this.renderSubmit(value)}
+                        {({language}) => this.renderSubmit(language)}
                     </LanguageContext.Consumer>
                 </label>
                 <input type="text" name="name" />

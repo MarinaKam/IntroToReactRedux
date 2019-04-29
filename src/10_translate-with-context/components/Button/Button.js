@@ -11,7 +11,7 @@ class Button extends Component {
         return (
             <button className="ui primary button">
                 <LanguageContext.Consumer>
-                    {value =>  this.renderSubmit(value)}
+                    {({language}) =>  this.renderSubmit(language)}
                 </LanguageContext.Consumer>
             </button>
         );

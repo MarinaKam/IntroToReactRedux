@@ -1,13 +1,15 @@
 {
-  "main.css": "/IntroToReactRedux/static/css/main.2c51aacd.chunk.css",
-  "main.js": "/IntroToReactRedux/static/js/main.19ac4e99.chunk.js",
-  "main.js.map": "/IntroToReactRedux/static/js/main.19ac4e99.chunk.js.map",
-  "runtime~main.js": "/IntroToReactRedux/static/js/runtime~main.e150f7eb.js",
-  "runtime~main.js.map": "/IntroToReactRedux/static/js/runtime~main.e150f7eb.js.map",
-  "static/js/2.b12f704e.chunk.js": "/IntroToReactRedux/static/js/2.b12f704e.chunk.js",
-  "static/js/2.b12f704e.chunk.js.map": "/IntroToReactRedux/static/js/2.b12f704e.chunk.js.map",
-  "index.html": "/IntroToReactRedux/index.html",
-  "precache-manifest.f45571de87b845e047c27550097bcebd.js": "/IntroToReactRedux/precache-manifest.f45571de87b845e047c27550097bcebd.js",
-  "service-worker.js": "/IntroToReactRedux/service-worker.js",
-  "static/css/main.2c51aacd.chunk.css.map": "/IntroToReactRedux/static/css/main.2c51aacd.chunk.css.map"
+  "files": {
+    "main.css": "/IntroToReactRedux/static/css/main.ea90481f.chunk.css",
+    "main.js": "/IntroToReactRedux/static/js/main.3511b6a0.chunk.js",
+    "main.js.map": "/IntroToReactRedux/static/js/main.3511b6a0.chunk.js.map",
+    "runtime~main.js": "/IntroToReactRedux/static/js/runtime~main.7e1ba1b5.js",
+    "runtime~main.js.map": "/IntroToReactRedux/static/js/runtime~main.7e1ba1b5.js.map",
+    "static/js/2.119690a7.chunk.js": "/IntroToReactRedux/static/js/2.119690a7.chunk.js",
+    "static/js/2.119690a7.chunk.js.map": "/IntroToReactRedux/static/js/2.119690a7.chunk.js.map",
+    "index.html": "/IntroToReactRedux/index.html",
+    "precache-manifest.412aeeb8260550d0ba1ab7ab56a2f172.js": "/IntroToReactRedux/precache-manifest.412aeeb8260550d0ba1ab7ab56a2f172.js",
+    "service-worker.js": "/IntroToReactRedux/service-worker.js",
+    "static/css/main.ea90481f.chunk.css.map": "/IntroToReactRedux/static/css/main.ea90481f.chunk.css.map"
+  }
 }
