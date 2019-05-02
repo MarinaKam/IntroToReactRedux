@@ -8,7 +8,19 @@ body {
 }
 
 ul, li {
-  list-style: none;
+  /*list-style: none;*/
+}
+li {
+  margin-bottom: 15px;
+}
+
+h4:first-letter,
+.body p:first-letter {
+  text-transform: capitalize;
+}
+
+.users p {
+  color: blue;
 }
 
 h1 {
